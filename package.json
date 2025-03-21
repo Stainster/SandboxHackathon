@@ -1,0 +1,15 @@
+{
+  "name": "sandbox",
+  "version": "1.0.0",
+  "description": "Hackathon development",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "testSandbox"
+  },
+  "author": "Austin Mustain",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^35.0.2"
+  }
+}

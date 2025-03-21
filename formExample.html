@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <meta charset="UTF-8" />
+            <meta
+            http-equiv="Content-Security-Policy"
+            content="script-src 'self' 'unsafe-inline';" 
+            />
+            <link rel="stylesheet" type="text/css" href="./styles.css">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=dark_mode" />
+            <title>Example Marked up 1098T Form</title>
+    </head>
+    <body>
+        <header>
+            <a href="index.html">Home</a>
+            <a href="formExample.html">Import</a>
+            <a href="test.html">New</a>
+            <span id="toggle-dark-mode" class="material-symbols-outlined">dark_mode</span>
+        </header>
+        <img src="1098T.png" alt="1098T Form" class="form-image" />
+        <p>
+            Below is what the form would look like after the imported document was processed.
+        </p>
+        <p class="separator"></p>
+        <main class="form-example">
+            <h1>1098T Form Example</h1>
+            <div class="instructions">
+                <h3>Instructions For Setting up your Template</h3>
+                <span>Check the box on the far left if column is to be sent into database</span>
+                <span>Edit column titles to their Associated Column titles in your database</span>
+                <span>Text on the right is the data that will go into the database</span>
+            </div>
+            <p class="separator"></p>
+            <div>
+                <label for="FormTitle">Enter the title of your New Form: </label>
+                <input type="text" id="FormTitle" value="Form 1098-T, Tuition Statement" />
+            </div>
+            <div>
+                <input type="checkbox" id="checkbox1" />
+                <label for="checkbox1"></label>
+                <input type="text" id="FilerName" value="FILER'S name, street address, city or town, state or province, country, ZIP or foreign postal code, and telephone number"/>
+                <label for="FilerName"></label>
+                Utah State University 
+                1600 Old Main Hill
+                Logan   UT   84322
+                UNITED STATES 
+                (435)   7971116
+            </div>
+            <div>
+                <input type="checkbox" id="checkbox2" />
+                <label for="checkbox2"></label>
+                <input type="text" id="Payments" value="1  Payments received for qualified tuition and related expenses" />
+                <label for="Payments"></label>
+                $5,568.34
+            </div>
+            <div>
+                <input type="checkbox" id="checkbox2.1" />
+                <label for="checkbox2.1"></label>
+                <input type="text" id="Payments" value="2" />
+                <label for="Payments"></label>
+            </div>
+            <div>
+                <input type="checkbox" id="checkbox3" />
+                <label for="checkbox3"></label>
+                <input type="text" id="FilerEIN" value="FILER'S employer identification" />
+                <label for="FilerEIN"></label>
+                876000528
+            </div>
+            <div>
+                <input type="checkbox" id="checkbox4" />
+                <label for="checkbox4"></label>
+                <input type="text" id="StudentsTIN" value="STUDENT'S TIN" />
+                <label for="StudentsTIN"></label>
+                *********
+            </div>
+            <div>
+                <input type="checkbox" id="checkbox5" />
+                <label for="checkbox5"></label>
+                <input type="text" id="3" value="3" />
+                <label for="3"></label>
+            </div>
+            <div>
+                <input type="checkbox" id="checkbox6" />
+                <label for="checkbox6"></label>
+                <input type="text" id="StudentsName" value="STUDENT'S name, street address (including apt. no.), city or town, state or province, country, and ZIP or foreign postal code" />
+                <label for="StudentsName"></label>
+                Austin   William   Mustain
+                4091 W Red Pine Cv
+                
+                Cedar Hills; UT  84062-8072
+            </div>
+            <div>
+                <input type="checkbox" id="checkbox7" />
+                <label for="checkbox7"></label>
+                <input type="text" id="4" value="4  Adjustments made for a prior year" />
+                <label for="4"></label>
+                $
+            </div>
+            <div>
+                <input type="checkbox" id="checkbox8" />
+                <label for="checkbox8"></label>
+                <input type="text" id="5" value="5  Scholarships or grants" />
+                <label for="5"></label>
+                $
+            </div>
+            <div>
+                <input type="checkbox" id="checkbox9" />
+                <label for="checkbox9"></label>
+                <input type="text" id="6" value="6  Adjustments to scholarships or grants for a prior year" />
+                <label for="6"></label>
+                $
+            </div>
+            <div>
+                <input type="checkbox" id="checkbox10" />
+                <label for="checkbox10"></label>
+                <input type="text" id="7" value="7  Checked if the amount in box 1 includes amounts for an academic period beginning January-March 2025" />
+                <label for="7"></label>
+                <input type="checkbox" id="box1Includes" />
+                <label for="box1Includes"></label>
+            </div>
+            <div>
+                <input type="checkbox" id="checkbox11" />
+                <label for="checkbox11"></label>
+                <input type="text" id="AcctNo" value="Service Provider/Acct. No. (see instr.)" />
+                <label for="AcctNo"></label>
+            </div>
+            <div>
+                <input type="checkbox" id="checkbox12" />
+                <label for="checkbox12"></label>
+                <input type="text" id="8" value="8  Check if at least halftime student" />
+                <label for="8"></label>
+                <input type="checkbox" id="atLeastHalfTime" checked="true" />
+                <label for="atLeastHalfTime"></label>
+            </div>
+            <div>
+                <input type="checkbox" id="checkbox13" />
+                <label for="checkbox13"></label>
+                <input type="text" id="9" value="9  Checked if a graduate student" />
+                <label for="9"></label>
+                <input type="checkbox" id="graduateStudent" />
+                <label for="graduateStudent"></label>
+            </div>
+            <div>
+                <input type="checkbox" id="checkbox14" />
+                <label for="checkbox14"></label>
+                <input type="text" id="10" value="10  Ins. contract reimb./refund" />
+                <label for="10"></label>
+                $
+            </div>
+            <button id="submit">Finalize your template</button>
+        </main>
+        <script src="renderer.js" defer></script>
+    </body>
+</html>

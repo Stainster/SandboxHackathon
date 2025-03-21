@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="script-src 'self' 'unsafe-inline';" 
+    />
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=dark_mode" />
+    <title>ActiveSheet</title>
+  </head>
+  <body>
+    <header>
+      <a href="index.html">Home</a>
+      <a href="formExample.html">Import</a>
+      <a href="test.html">New</a>
+      <span id="toggle-dark-mode" class="material-symbols-outlined">dark_mode</span>
+    </header>
+    <main>
+      <h1>Welcome to Active Sheet</h1>
+      <p>Click Import to see an example of importing a pre-existing form to create a template</p>
+      <p>Click New to create a new form</p>
+      <p>Click Home to return to this page</p>
+
+      <p class="separator"></p>
+
+      <p>Active Sheet is software that will be able to convert your pre-existing form documents into a document that will update in the database automatically
+        when the form is edited. The user will be able to create a template on the first document. After the template is created any document will be able to be 
+        designated to be that template. Then the document will update on edit or when ever the user chooses to have the database update.
+      </p>
+    </main>
+    <script src="renderer.js"></script>
+    
+  </body>
+  
+</html>
